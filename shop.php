@@ -82,7 +82,7 @@ if(isset($_GET['action']) && $_GET['action'] =='remove'){
     echo "<td>".$product['product_name']."</td>";
     echo "<td>".$product['product_price']."</td>";
     echo "<td>
-    <form method='post' action='cart.php'>
+    <form method='post' action='shop.php'>
     <input type='hidden' name='product_id' value='".$product['product_id']."'>
     <input type='number' name='product_qty' value='".$product['product_qty']."'>
     <input type='submit' name='update_cart' value='Zaktualizuj'>
@@ -90,7 +90,7 @@ if(isset($_GET['action']) && $_GET['action'] =='remove'){
     </td>";
     echo "<td>".$subtotal."</td>";
     echo "<td>
-    <a href='cart.php?action=remove&product_id=".$product['product_id']."'>Usuń</a>
+    <a href='shopform.php?action=remove&product_id=".$product['product_id']."'>Usuń</a>
     </td>";
     echo "</tr>";
 }
